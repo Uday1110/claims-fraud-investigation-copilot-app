@@ -1,0 +1,244 @@
+{
+  "generated_by": "python -m scripts.golden_signals",
+  "generated_at": "2026-09-26T17:54:35+00:00",
+  "source": {
+    "phoenix_spans": "bench_baseline_spans.parquet",
+    "spans": 283,
+    "trace_window": [
+      "2026-09-26 17:52:54.561319+00:00",
+      "2026-09-26 17:53:45.260382+00:00"
+    ],
+    "eval_report": null
+  },
+  "model": "gemini-3.5-flash",
+  "pricing_usd_per_1m_tokens": {
+    "input": 0.3,
+    "output": 2.5,
+    "note": "configurable via PRICE_INPUT_PER_1M / PRICE_OUTPUT_PER_1M"
+  },
+  "latency": {
+    "end_to_end_run": {
+      "count": 3,
+      "p50_ms": 47792.7,
+      "p95_ms": 50408.4,
+      "max_ms": 50699.1,
+      "mean_ms": 45519.3
+    },
+    "thinking_llm": {
+      "count": 21,
+      "p50_ms": 5065.5,
+      "p95_ms": 12714.5,
+      "max_ms": 15091.2,
+      "mean_ms": 6167.7
+    },
+    "acting_agent_nodes": {
+      "count": 31,
+      "p50_ms": 41.0,
+      "p95_ms": 10655.0,
+      "max_ms": 15251.4,
+      "mean_ms": 1495.3
+    },
+    "tool": {
+      "count": 12,
+      "p50_ms": 7.6,
+      "p95_ms": 96.5,
+      "max_ms": 111.4,
+      "mean_ms": 26.2
+    },
+    "per_run_thinking_ms": {
+      "count": 3,
+      "p50_ms": 45493.2,
+      "p95_ms": 48159.1,
+      "max_ms": 48455.3,
+      "mean_ms": 43173.7
+    },
+    "per_run_tool_ms": {
+      "count": 3,
+      "p50_ms": 112.8,
+      "p95_ms": 126.6,
+      "max_ms": 128.1,
+      "mean_ms": 104.6
+    },
+    "by_agent_node": {
+      "case_writer": {
+        "count": 3,
+        "p50_ms": 12930.6,
+        "p95_ms": 15019.4,
+        "max_ms": 15251.4,
+        "mean_ms": 12187.1
+      },
+      "human_gate": {
+        "count": 1,
+        "p50_ms": 7.8,
+        "p95_ms": 7.8,
+        "max_ms": 7.8,
+        "mean_ms": 7.8
+      },
+      "input_guard": {
+        "count": 3,
+        "p50_ms": 117.8,
+        "p95_ms": 161.2,
+        "max_ms": 166.0,
+        "mean_ms": 113.9
+      },
+      "intent_router": {
+        "count": 3,
+        "p50_ms": 2856.8,
+        "p95_ms": 3357.4,
+        "max_ms": 3413.0,
+        "mean_ms": 2940.3
+      },
+      "load_context": {
+        "count": 3,
+        "p50_ms": 50.5,
+        "p95_ms": 64.8,
+        "max_ms": 66.4,
+        "mean_ms": 53.5
+      },
+      "memory_writer": {
+        "count": 3,
+        "p50_ms": 49.0,
+        "p95_ms": 49.9,
+        "max_ms": 50.0,
+        "mean_ms": 46.7
+      },
+      "output_guard": {
+        "count": 3,
+        "p50_ms": 7.9,
+        "p95_ms": 10.8,
+        "max_ms": 11.1,
+        "mean_ms": 7.9
+      },
+      "supervisor": {
+        "count": 12,
+        "p50_ms": 18.9,
+        "p95_ms": 44.1,
+        "max_ms": 55.6,
+        "mean_ms": 24.9
+      }
+    },
+    "by_tool": {
+      "find_linked_claims": {
+        "count": 3,
+        "p50_ms": 6.3,
+        "p95_ms": 6.9,
+        "max_ms": 7.0,
+        "mean_ms": 5.8
+      },
+      "get_claim_history": {
+        "count": 3,
+        "p50_ms": 10.7,
+        "p95_ms": 13.5,
+        "max_ms": 13.8,
+        "mean_ms": 10.2
+      },
+      "score_red_flags": {
+        "count": 3,
+        "p50_ms": 7.6,
+        "p95_ms": 7.7,
+        "max_ms": 7.7,
+        "mean_ms": 5.8
+      },
+      "search_fraud_playbook": {
+        "count": 3,
+        "p50_ms": 84.4,
+        "p95_ms": 108.7,
+        "max_ms": 111.4,
+        "mean_ms": 82.9
+      }
+    }
+  },
+  "traffic": {
+    "runs": 3,
+    "spans": 283,
+    "llm_calls": 21,
+    "tool_calls": 12,
+    "agent_node_executions": 31,
+    "runs_by_tag": {
+      "bench-baseline": 3
+    },
+    "llm_calls_per_run": {
+      "p50": 7.0,
+      "p95": 7.0
+    }
+  },
+  "errors": {
+    "error_spans": 0,
+    "error_span_rate": 0.0,
+    "llm_error_spans": 0,
+    "tool_error_spans": 0,
+    "runs_with_error_spans": 0,
+    "degraded_eval_runs": null
+  },
+  "tokens": {
+    "prompt_tokens": 20252,
+    "completion_tokens": 27834,
+    "reasoning_tokens": 22225,
+    "total_tokens": 48086,
+    "per_run_total": {
+      "p50": 16859.0,
+      "p95": 18793.1
+    },
+    "by_agent": {
+      "ChatGoogleGenerativeAI": 48086
+    }
+  },
+  "cost": {
+    "total_usd": 0.075661,
+    "per_run_usd": {
+      "mean": 0.02522,
+      "p50": 0.027135,
+      "p95": 0.02999,
+      "max": 0.030307
+    },
+    "budget_per_run_usd": 0.05,
+    "runs_over_budget": 0
+  },
+  "quality": {
+    "accuracy": null,
+    "hallucination_rate": null,
+    "hallucination_score_mean": null,
+    "faithfulness_mean": null,
+    "answer_relevancy_mean": null,
+    "case_correctness_mean": null,
+    "investigation_action_accuracy": null,
+    "safety_pass_rate": null
+  },
+  "slo": {
+    "run_p95_latency": {
+      "target_ms": 240000,
+      "actual_ms": 50408.4,
+      "met": true
+    },
+    "tool_p95_latency": {
+      "target_ms": 5000,
+      "actual_ms": 96.5,
+      "met": true
+    },
+    "error_span_rate": {
+      "target_max": 0.05,
+      "actual": 0.0,
+      "met": true
+    },
+    "cost_per_run_p95": {
+      "target_max_usd": 0.05,
+      "actual_usd": 0.02999,
+      "met": true
+    },
+    "accuracy": {
+      "target_min": 0.9,
+      "actual": null,
+      "met": false
+    },
+    "hallucination_rate": {
+      "target_max": 0.1,
+      "actual": null,
+      "met": false
+    }
+  },
+  "phase_config": {
+    "GEMINI_THINKING_LEVEL": "high",
+    "CONTEXT_COMPRESSION": "false",
+    "MAX_RETRIEVAL_ROUNDS": "3"
+  }
+}

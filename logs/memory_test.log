@@ -1,0 +1,24 @@
+# memory persistence test - 2026-09-26T18:33:30+00:00
+# state dir (fresh): test_cross_session_memory_pers0
+# stores: checkpoints.sqlite (tier 1), long_term_memory.sqlite (tiers 2+3)
+
+[session1] pid=16060 elapsed=48.4s
+  turn1 investigate CLM-1003 -> intent=investigate_claim action=refer_to_siu pending_signoff=True
+  human review -> approved
+  turn2 (same thread) 'What did I tell you about the fire marshal?' -> 'Earlier in this conversation you said: FYI the fire marshal confirmed accelerant traces in the garage. For CLM-1003 the draft recommendation is refer_to_siu (high likelihood, score 63). Notes you gave me earlier: [CLM-1003] FYI the fire marshal confirmed accelerant traces in the garage.'
+
+[session2] pid=7084 (new process) elapsed=51.0s
+  restored thread mem-thread-1 from SQLite checkpointer: 5 messages, case_file=CLM-1003
+  new thread mem-thread-2 recalled episodes=['CLM-1003:signoff_approved']
+  recalled semantic facts=['[CLM-1003] FYI the fire marshal confirmed accelerant traces in the garage.']
+  answer -> 'In a previous session you reviewed CLM-1003: recommendation refer_to_siu (high), status signoff_approved. Notes you gave me earlier: [CLM-1003] FYI the fire marshal confirmed accelerant traces in the garage.'
+
+# checks
+  [PASS] short-term: same-thread follow-up uses earlier stated fact (accelerant)
+  [PASS] adverse recommendation paused for human sign-off
+  [PASS] tier1: checkpointed thread restored in a new process
+  [PASS] tier2: prior-session episode recalled with sign-off status
+  [PASS] tier3: prior-session fact recalled by semantic search
+  [PASS] return-visit answer uses prior-session context
+
+RESULT: PASS (6/6)

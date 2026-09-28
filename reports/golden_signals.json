@@ -1,0 +1,355 @@
+{
+  "generated_by": "python -m scripts.golden_signals",
+  "generated_at": "2026-09-26T18:25:15+00:00",
+  "source": {
+    "phoenix_spans": "phoenix_spans.parquet",
+    "spans": 2350,
+    "trace_window": [
+      "2026-09-26 18:02:52.194725+00:00",
+      "2026-09-26 18:24:59.467647+00:00"
+    ],
+    "eval_report": "reports/eval_report.json"
+  },
+  "model": "gemini-3.5-flash",
+  "pricing_usd_per_1m_tokens": {
+    "input": 0.3,
+    "output": 2.5,
+    "note": "configurable via PRICE_INPUT_PER_1M / PRICE_OUTPUT_PER_1M"
+  },
+  "latency": {
+    "end_to_end_run": {
+      "count": 58,
+      "p50_ms": 2498.0,
+      "p95_ms": 29856.6,
+      "max_ms": 32302.7,
+      "mean_ms": 9244.9
+    },
+    "thinking_llm": {
+      "count": 165,
+      "p50_ms": 2404.4,
+      "p95_ms": 6511.8,
+      "max_ms": 8508.6,
+      "mean_ms": 2682.5
+    },
+    "acting_agent_nodes": {
+      "count": 417,
+      "p50_ms": 33.1,
+      "p95_ms": 3454.1,
+      "max_ms": 27120.5,
+      "mean_ms": 695.8
+    },
+    "tool": {
+      "count": 86,
+      "p50_ms": 10.3,
+      "p95_ms": 100.9,
+      "max_ms": 177.9,
+      "mean_ms": 26.5
+    },
+    "per_run_thinking_ms": {
+      "count": 58,
+      "p50_ms": 1659.3,
+      "p95_ms": 25537.6,
+      "max_ms": 29596.4,
+      "mean_ms": 7498.8
+    },
+    "per_run_tool_ms": {
+      "count": 58,
+      "p50_ms": 0.0,
+      "p95_ms": 157.9,
+      "max_ms": 204.6,
+      "mean_ms": 38.4
+    },
+    "by_agent_node": {
+      "case_writer": {
+        "count": 17,
+        "p50_ms": 6733.8,
+        "p95_ms": 8112.8,
+        "max_ms": 8673.5,
+        "mean_ms": 5716.2
+      },
+      "clarify": {
+        "count": 2,
+        "p50_ms": 5.3,
+        "p95_ms": 6.1,
+        "max_ms": 6.2,
+        "mean_ms": 5.3
+      },
+      "escalate_human": {
+        "count": 4,
+        "p50_ms": 7.0,
+        "p95_ms": 12.3,
+        "max_ms": 13.2,
+        "mean_ms": 6.8
+      },
+      "human_gate": {
+        "count": 12,
+        "p50_ms": 8.0,
+        "p95_ms": 26.9,
+        "max_ms": 33.9,
+        "mean_ms": 10.9
+      },
+      "input_guard": {
+        "count": 59,
+        "p50_ms": 72.1,
+        "p95_ms": 247.4,
+        "max_ms": 595.9,
+        "mean_ms": 110.1
+      },
+      "intent_router": {
+        "count": 35,
+        "p50_ms": 2107.4,
+        "p95_ms": 26434.4,
+        "max_ms": 27120.5,
+        "mean_ms": 4105.3
+      },
+      "load_context": {
+        "count": 35,
+        "p50_ms": 69.9,
+        "p95_ms": 107.9,
+        "max_ms": 182.0,
+        "mean_ms": 70.5
+      },
+      "memory_writer": {
+        "count": 57,
+        "p50_ms": 35.9,
+        "p95_ms": 97.7,
+        "max_ms": 4417.4,
+        "mean_ms": 162.4
+      },
+      "out_of_scope": {
+        "count": 2,
+        "p50_ms": 5.0,
+        "p95_ms": 6.0,
+        "max_ms": 6.2,
+        "mean_ms": 5.0
+      },
+      "output_guard": {
+        "count": 57,
+        "p50_ms": 8.8,
+        "p95_ms": 32.4,
+        "max_ms": 87.1,
+        "mean_ms": 12.9
+      },
+      "refuse": {
+        "count": 24,
+        "p50_ms": 3.6,
+        "p95_ms": 12.8,
+        "max_ms": 15.5,
+        "mean_ms": 4.5
+      },
+      "request_signoff": {
+        "count": 11,
+        "p50_ms": 5.7,
+        "p95_ms": 15.7,
+        "max_ms": 16.2,
+        "mean_ms": 7.8
+      },
+      "respond": {
+        "count": 8,
+        "p50_ms": 3458.4,
+        "p95_ms": 3677.1,
+        "max_ms": 3753.9,
+        "mean_ms": 3383.4
+      },
+      "supervisor": {
+        "count": 94,
+        "p50_ms": 26.7,
+        "p95_ms": 58.1,
+        "max_ms": 105.7,
+        "mean_ms": 30.9
+      }
+    },
+    "by_tool": {
+      "find_linked_claims": {
+        "count": 22,
+        "p50_ms": 8.4,
+        "p95_ms": 13.7,
+        "max_ms": 16.5,
+        "mean_ms": 7.9
+      },
+      "get_claim_history": {
+        "count": 22,
+        "p50_ms": 10.1,
+        "p95_ms": 16.5,
+        "max_ms": 20.8,
+        "mean_ms": 10.2
+      },
+      "score_red_flags": {
+        "count": 19,
+        "p50_ms": 8.7,
+        "p95_ms": 15.6,
+        "max_ms": 16.1,
+        "mean_ms": 9.7
+      },
+      "search_fraud_playbook": {
+        "count": 23,
+        "p50_ms": 68.2,
+        "p95_ms": 121.2,
+        "max_ms": 177.9,
+        "mean_ms": 73.9
+      }
+    }
+  },
+  "traffic": {
+    "runs": 58,
+    "spans": 2350,
+    "llm_calls": 165,
+    "tool_calls": 86,
+    "agent_node_executions": 417,
+    "runs_by_tag": {
+      "eval": 22,
+      "demo": 14,
+      "redteam-offline": 12,
+      "redteam": 10
+    },
+    "llm_calls_per_run": {
+      "p50": 1.0,
+      "p95": 8.0
+    }
+  },
+  "errors": {
+    "error_spans": 57,
+    "error_span_rate": 0.0243,
+    "llm_error_spans": 19,
+    "tool_error_spans": 0,
+    "runs_with_error_spans": 1,
+    "degraded_eval_runs": 0
+  },
+  "tokens": {
+    "prompt_tokens": 142847,
+    "completion_tokens": 53930,
+    "reasoning_tokens": 19917,
+    "total_tokens": 196777,
+    "per_run_total": {
+      "p50": 453.0,
+      "p95": 10288.1
+    },
+    "by_agent": {
+      "case_writer": {
+        "llm_calls": 15,
+        "prompt_tokens": 26811,
+        "completion_tokens": 19088,
+        "reasoning_tokens": 9850,
+        "cost_usd": 0.055763,
+        "p50_ms": 6844.0,
+        "p95_ms": 7909.5
+      },
+      "history_agent": {
+        "llm_calls": 22,
+        "prompt_tokens": 13794,
+        "completion_tokens": 8472,
+        "reasoning_tokens": 1361,
+        "cost_usd": 0.025318,
+        "p50_ms": 2795.3,
+        "p95_ms": 4500.8
+      },
+      "history_agent.quarantine": {
+        "llm_calls": 24,
+        "prompt_tokens": 3597,
+        "completion_tokens": 4098,
+        "reasoning_tokens": 2482,
+        "cost_usd": 0.011324,
+        "p50_ms": 2167.1,
+        "p95_ms": 3313.5
+      },
+      "indicator_agent": {
+        "llm_calls": 17,
+        "prompt_tokens": 22859,
+        "completion_tokens": 7237,
+        "reasoning_tokens": 1179,
+        "cost_usd": 0.02495,
+        "p50_ms": 2883.6,
+        "p95_ms": 4391.1
+      },
+      "intent_router": {
+        "llm_calls": 38,
+        "prompt_tokens": 38831,
+        "completion_tokens": 2463,
+        "reasoning_tokens": 208,
+        "cost_usd": 0.017807,
+        "p50_ms": 1832.4,
+        "p95_ms": 2238.2
+      },
+      "memory_writer": {
+        "llm_calls": 2,
+        "prompt_tokens": 763,
+        "completion_tokens": 666,
+        "reasoning_tokens": 551,
+        "cost_usd": 0.001894,
+        "p50_ms": 3034.7,
+        "p95_ms": 3685.6
+      },
+      "playbook_agent": {
+        "llm_calls": 39,
+        "prompt_tokens": 17312,
+        "completion_tokens": 8476,
+        "reasoning_tokens": 3309,
+        "cost_usd": 0.026384,
+        "p50_ms": 2373.2,
+        "p95_ms": 3619.9
+      },
+      "respond": {
+        "llm_calls": 8,
+        "prompt_tokens": 18880,
+        "completion_tokens": 3430,
+        "reasoning_tokens": 977,
+        "cost_usd": 0.014239,
+        "p50_ms": 3286.7,
+        "p95_ms": 3487.1
+      }
+    }
+  },
+  "cost": {
+    "total_usd": 0.177679,
+    "per_run_usd": {
+      "mean": 0.003063,
+      "p50": 0.000207,
+      "p95": 0.010459,
+      "max": 0.013798
+    },
+    "budget_per_run_usd": 0.05,
+    "runs_over_budget": 0
+  },
+  "quality": {
+    "accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "hallucination_score_mean": 0.0,
+    "faithfulness_mean": 0.9943,
+    "answer_relevancy_mean": 1.0,
+    "case_correctness_mean": 1.0,
+    "investigation_action_accuracy": 1.0,
+    "safety_pass_rate": 1.0
+  },
+  "slo": {
+    "run_p95_latency": {
+      "target_ms": 240000,
+      "actual_ms": 29856.6,
+      "met": true
+    },
+    "tool_p95_latency": {
+      "target_ms": 5000,
+      "actual_ms": 100.9,
+      "met": true
+    },
+    "error_span_rate": {
+      "target_max": 0.05,
+      "actual": 0.0243,
+      "met": true
+    },
+    "cost_per_run_p95": {
+      "target_max_usd": 0.05,
+      "actual_usd": 0.010459,
+      "met": true
+    },
+    "accuracy": {
+      "target_min": 0.9,
+      "actual": 1.0,
+      "met": true
+    },
+    "hallucination_rate": {
+      "target_max": 0.1,
+      "actual": 0.0,
+      "met": true
+    }
+  }
+}

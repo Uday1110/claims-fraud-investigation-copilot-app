@@ -1,0 +1,6 @@
+# Evidence artifacts are committed byte-for-byte (no line-ending conversion), so every file matches
+# the sha256 fingerprint recorded in reports/evidence_manifest.json on any operating system.
+logs/** -text
+traces/** -text
+reports/** -text
+evidence_archive/** -text

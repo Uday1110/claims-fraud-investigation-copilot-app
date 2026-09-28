@@ -1,0 +1,20 @@
+[
+  {
+    "index_ref": "XIDX-77120",
+    "carrier": "Synthetic Mutual (other carrier)",
+    "claimant_id": "CLT-498382",
+    "loss_date": "2026-01-30",
+    "loss_type": "side_impact_collision",
+    "paid_amount": 14700,
+    "status": "paid"
+  },
+  {
+    "index_ref": "XIDX-80211",
+    "carrier": "Synthetic Assurance (other carrier)",
+    "claimant_id": "CLT-653306",
+    "loss_date": "2025-12-01",
+    "loss_type": "storm_roof_damage",
+    "paid_amount": 5100,
+    "status": "paid"
+  }
+]

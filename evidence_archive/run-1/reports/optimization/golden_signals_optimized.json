@@ -1,0 +1,244 @@
+{
+  "generated_by": "python -m scripts.golden_signals",
+  "generated_at": "2026-09-26T17:54:35+00:00",
+  "source": {
+    "phoenix_spans": "bench_optimized_spans.parquet",
+    "spans": 283,
+    "trace_window": [
+      "2026-09-26 17:53:49.092901+00:00",
+      "2026-09-26 17:54:13.951898+00:00"
+    ],
+    "eval_report": null
+  },
+  "model": "gemini-3.5-flash",
+  "pricing_usd_per_1m_tokens": {
+    "input": 0.3,
+    "output": 2.5,
+    "note": "configurable via PRICE_INPUT_PER_1M / PRICE_OUTPUT_PER_1M"
+  },
+  "latency": {
+    "end_to_end_run": {
+      "count": 3,
+      "p50_ms": 23635.0,
+      "p95_ms": 24736.6,
+      "max_ms": 24859.0,
+      "mean_ms": 23983.1
+    },
+    "thinking_llm": {
+      "count": 21,
+      "p50_ms": 2715.9,
+      "p95_ms": 5994.3,
+      "max_ms": 6847.1,
+      "mean_ms": 3052.7
+    },
+    "acting_agent_nodes": {
+      "count": 31,
+      "p50_ms": 36.9,
+      "p95_ms": 5505.4,
+      "max_ms": 7090.3,
+      "mean_ms": 853.5
+    },
+    "tool": {
+      "count": 12,
+      "p50_ms": 10.3,
+      "p95_ms": 72.8,
+      "max_ms": 86.8,
+      "mean_ms": 23.3
+    },
+    "per_run_thinking_ms": {
+      "count": 3,
+      "p50_ms": 21005.0,
+      "p95_ms": 22161.9,
+      "max_ms": 22290.4,
+      "mean_ms": 21369.0
+    },
+    "per_run_tool_ms": {
+      "count": 3,
+      "p50_ms": 89.4,
+      "p95_ms": 112.2,
+      "max_ms": 114.8,
+      "mean_ms": 93.2
+    },
+    "by_agent_node": {
+      "case_writer": {
+        "count": 3,
+        "p50_ms": 6325.0,
+        "p95_ms": 7013.7,
+        "max_ms": 7090.3,
+        "mean_ms": 6033.7
+      },
+      "human_gate": {
+        "count": 1,
+        "p50_ms": 14.8,
+        "p95_ms": 14.8,
+        "max_ms": 14.8,
+        "mean_ms": 14.8
+      },
+      "input_guard": {
+        "count": 3,
+        "p50_ms": 78.8,
+        "p95_ms": 180.8,
+        "max_ms": 192.1,
+        "mean_ms": 108.4
+      },
+      "intent_router": {
+        "count": 3,
+        "p50_ms": 2546.0,
+        "p95_ms": 2641.9,
+        "max_ms": 2652.5,
+        "mean_ms": 2432.7
+      },
+      "load_context": {
+        "count": 3,
+        "p50_ms": 59.8,
+        "p95_ms": 81.2,
+        "max_ms": 83.5,
+        "mean_ms": 56.4
+      },
+      "memory_writer": {
+        "count": 3,
+        "p50_ms": 59.5,
+        "p95_ms": 65.2,
+        "max_ms": 65.8,
+        "mean_ms": 52.2
+      },
+      "output_guard": {
+        "count": 3,
+        "p50_ms": 11.1,
+        "p95_ms": 11.2,
+        "max_ms": 11.2,
+        "mean_ms": 10.1
+      },
+      "supervisor": {
+        "count": 12,
+        "p50_ms": 25.6,
+        "p95_ms": 49.8,
+        "max_ms": 62.7,
+        "mean_ms": 30.3
+      }
+    },
+    "by_tool": {
+      "find_linked_claims": {
+        "count": 3,
+        "p50_ms": 9.1,
+        "p95_ms": 11.4,
+        "max_ms": 11.6,
+        "mean_ms": 9.4
+      },
+      "get_claim_history": {
+        "count": 3,
+        "p50_ms": 10.7,
+        "p95_ms": 26.1,
+        "max_ms": 27.9,
+        "mean_ms": 16.2
+      },
+      "score_red_flags": {
+        "count": 3,
+        "p50_ms": 8.8,
+        "p95_ms": 9.8,
+        "max_ms": 9.9,
+        "mean_ms": 8.6
+      },
+      "search_fraud_playbook": {
+        "count": 3,
+        "p50_ms": 61.3,
+        "p95_ms": 84.3,
+        "max_ms": 86.8,
+        "mean_ms": 59.0
+      }
+    }
+  },
+  "traffic": {
+    "runs": 3,
+    "spans": 283,
+    "llm_calls": 21,
+    "tool_calls": 12,
+    "agent_node_executions": 31,
+    "runs_by_tag": {
+      "bench-optimized": 3
+    },
+    "llm_calls_per_run": {
+      "p50": 7.0,
+      "p95": 7.0
+    }
+  },
+  "errors": {
+    "error_spans": 0,
+    "error_span_rate": 0.0,
+    "llm_error_spans": 0,
+    "tool_error_spans": 0,
+    "runs_with_error_spans": 0,
+    "degraded_eval_runs": null
+  },
+  "tokens": {
+    "prompt_tokens": 19672,
+    "completion_tokens": 8525,
+    "reasoning_tokens": 2448,
+    "total_tokens": 28197,
+    "per_run_total": {
+      "p50": 9271.0,
+      "p95": 10842.4
+    },
+    "by_agent": {
+      "ChatGoogleGenerativeAI": 28197
+    }
+  },
+  "cost": {
+    "total_usd": 0.027214,
+    "per_run_usd": {
+      "mean": 0.009071,
+      "p50": 0.008904,
+      "p95": 0.010155,
+      "max": 0.010294
+    },
+    "budget_per_run_usd": 0.05,
+    "runs_over_budget": 0
+  },
+  "quality": {
+    "accuracy": null,
+    "hallucination_rate": null,
+    "hallucination_score_mean": null,
+    "faithfulness_mean": null,
+    "answer_relevancy_mean": null,
+    "case_correctness_mean": null,
+    "investigation_action_accuracy": null,
+    "safety_pass_rate": null
+  },
+  "slo": {
+    "run_p95_latency": {
+      "target_ms": 240000,
+      "actual_ms": 24736.6,
+      "met": true
+    },
+    "tool_p95_latency": {
+      "target_ms": 5000,
+      "actual_ms": 72.8,
+      "met": true
+    },
+    "error_span_rate": {
+      "target_max": 0.05,
+      "actual": 0.0,
+      "met": true
+    },
+    "cost_per_run_p95": {
+      "target_max_usd": 0.05,
+      "actual_usd": 0.010155,
+      "met": true
+    },
+    "accuracy": {
+      "target_min": 0.9,
+      "actual": null,
+      "met": false
+    },
+    "hallucination_rate": {
+      "target_max": 0.1,
+      "actual": null,
+      "met": false
+    }
+  },
+  "phase_config": {
+    "GEMINI_THINKING_LEVEL": "low",
+    "CONTEXT_COMPRESSION": "true",
+    "MAX_RETRIEVAL_ROUNDS": "2"
+  }
+}

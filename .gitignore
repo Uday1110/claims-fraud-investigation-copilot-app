@@ -1,0 +1,31 @@
+# --- secrets (NFR-01) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+.deepeval/
+.deepeval*
+.cache/
+
+# --- runtime state (regenerated; never committed) ---
+data/runtime/
+data/index/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# --- editor / os ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

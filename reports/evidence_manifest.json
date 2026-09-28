@@ -1,0 +1,115 @@
+{
+  "generated_by": "python -m scripts.regenerate_evidence",
+  "generated_at": "2026-09-26T18:36:42+00:00",
+  "model": "gemini-3.5-flash",
+  "artifacts": [
+    {
+      "artifact": "logs/agent_actions.jsonl",
+      "bytes": 121960,
+      "sha256": "1d7e53592db585c3",
+      "produced_by": "src/audit/audit.py (audit middleware)"
+    },
+    {
+      "artifact": "logs/mcp_transcript.jsonl",
+      "bytes": 81822,
+      "sha256": "7f3bbc5d3b6b3b96",
+      "produced_by": "src/tools/mcp_client.py + src/tools/tool_logging.py"
+    },
+    {
+      "artifact": "logs/memory_test.log",
+      "bytes": 1684,
+      "sha256": "c9ccc7cb34dd3172",
+      "produced_by": "tests/test_memory_persistence.py"
+    },
+    {
+      "artifact": "logs/run_costs.jsonl",
+      "bytes": 28653,
+      "sha256": "2112775685259b2b",
+      "produced_by": "src/observability/cost.py"
+    },
+    {
+      "artifact": "logs/tool_calls.jsonl",
+      "bytes": 107450,
+      "sha256": "e7d1a2cb4fb66dbb",
+      "produced_by": "src/tools/tool_logging.py (ToolBox middleware)"
+    },
+    {
+      "artifact": "reports/api_demo_run.log",
+      "bytes": 823,
+      "sha256": "5ae32bd8ed409aef",
+      "produced_by": null
+    },
+    {
+      "artifact": "reports/dashboard.png",
+      "bytes": 183861,
+      "sha256": "0db12d513ae21c98",
+      "produced_by": "scripts/build_dashboard.py::draw"
+    },
+    {
+      "artifact": "reports/dashboard_data.csv",
+      "bytes": 427216,
+      "sha256": "77360dbc5416c2df",
+      "produced_by": "scripts/build_dashboard.py::export_csv"
+    },
+    {
+      "artifact": "reports/demo_run.json",
+      "bytes": 3310,
+      "sha256": "be710cae8304bd26",
+      "produced_by": "src/cli.py::run_demo"
+    },
+    {
+      "artifact": "reports/demo_run.md",
+      "bytes": 19187,
+      "sha256": "859a363811a1d090",
+      "produced_by": "src/cli.py::run_demo"
+    },
+    {
+      "artifact": "reports/eval_report.json",
+      "bytes": 52674,
+      "sha256": "95ffe18d9f995487",
+      "produced_by": "evals/run_eval.py"
+    },
+    {
+      "artifact": "reports/failure_candidates.json",
+      "bytes": 44461,
+      "sha256": "1bc735644a20ff31",
+      "produced_by": "scripts/find_failures.py"
+    },
+    {
+      "artifact": "reports/golden_signals.json",
+      "bytes": 8316,
+      "sha256": "c4f3da134f03fa3e",
+      "produced_by": "scripts/golden_signals.py"
+    },
+    {
+      "artifact": "reports/phoenix_ui.png",
+      "bytes": 223915,
+      "sha256": "80af89e0d20291f6",
+      "produced_by": "scripts/build_dashboard.py::phoenix_ui_screenshot"
+    },
+    {
+      "artifact": "reports/pii_redaction_sample.json",
+      "bytes": 1502,
+      "sha256": "768e7d4843540c08",
+      "produced_by": "scripts/pii_redaction_sample.py"
+    },
+    {
+      "artifact": "reports/redteam_results.json",
+      "bytes": 6947,
+      "sha256": "e311cfc576c678cb",
+      "produced_by": "scripts/run_redteam.py"
+    },
+    {
+      "artifact": "traces/phoenix_spans.jsonl",
+      "bytes": 1835183,
+      "sha256": "b7695921f41b0f9e",
+      "produced_by": "src/observability/tracing.py::export_spans"
+    },
+    {
+      "artifact": "traces/phoenix_spans.parquet",
+      "bytes": 2859587,
+      "sha256": "79a821e486603de5",
+      "produced_by": "src/observability/tracing.py::export_spans"
+    }
+  ]
+}

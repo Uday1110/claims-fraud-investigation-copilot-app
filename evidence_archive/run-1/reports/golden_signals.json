@@ -1,0 +1,276 @@
+{
+  "generated_by": "python -m scripts.golden_signals",
+  "generated_at": "2026-09-26T17:54:35+00:00",
+  "source": {
+    "phoenix_spans": "phoenix_spans.parquet",
+    "spans": 2352,
+    "trace_window": [
+      "2026-09-26 17:40:45.812345+00:00",
+      "2026-09-26 17:52:50.417694+00:00"
+    ],
+    "eval_report": "reports/eval_report.json"
+  },
+  "model": "gemini-3.5-flash",
+  "pricing_usd_per_1m_tokens": {
+    "input": 0.3,
+    "output": 2.5,
+    "note": "configurable via PRICE_INPUT_PER_1M / PRICE_OUTPUT_PER_1M"
+  },
+  "latency": {
+    "end_to_end_run": {
+      "count": 48,
+      "p50_ms": 5346.1,
+      "p95_ms": 27087.1,
+      "max_ms": 85600.6,
+      "mean_ms": 12484.1
+    },
+    "thinking_llm": {
+      "count": 162,
+      "p50_ms": 2494.1,
+      "p95_ms": 5617.7,
+      "max_ms": 8057.4,
+      "mean_ms": 2901.8
+    },
+    "acting_agent_nodes": {
+      "count": 354,
+      "p50_ms": 37.3,
+      "p95_ms": 4152.2,
+      "max_ms": 44994.7,
+      "mean_ms": 752.3
+    },
+    "tool": {
+      "count": 83,
+      "p50_ms": 10.9,
+      "p95_ms": 92.3,
+      "max_ms": 9810.1,
+      "mean_ms": 144.0
+    },
+    "per_run_thinking_ms": {
+      "count": 48,
+      "p50_ms": 4632.8,
+      "p95_ms": 23910.1,
+      "max_ms": 28364.3,
+      "mean_ms": 9793.5
+    },
+    "per_run_tool_ms": {
+      "count": 48,
+      "p50_ms": 0.0,
+      "p95_ms": 200.0,
+      "max_ms": 9843.7,
+      "mean_ms": 249.0
+    },
+    "by_agent_node": {
+      "case_writer": {
+        "count": 17,
+        "p50_ms": 5840.4,
+        "p95_ms": 8197.5,
+        "max_ms": 8574.5,
+        "mean_ms": 6000.5
+      },
+      "clarify": {
+        "count": 2,
+        "p50_ms": 8.5,
+        "p95_ms": 14.1,
+        "max_ms": 14.7,
+        "mean_ms": 8.5
+      },
+      "escalate_human": {
+        "count": 3,
+        "p50_ms": 1.6,
+        "p95_ms": 40.2,
+        "max_ms": 44.5,
+        "mean_ms": 15.4
+      },
+      "human_gate": {
+        "count": 11,
+        "p50_ms": 15.0,
+        "p95_ms": 23.6,
+        "max_ms": 28.6,
+        "mean_ms": 14.7
+      },
+      "input_guard": {
+        "count": 47,
+        "p50_ms": 74.4,
+        "p95_ms": 254.1,
+        "max_ms": 44994.7,
+        "mean_ms": 1059.9
+      },
+      "intent_router": {
+        "count": 32,
+        "p50_ms": 2120.3,
+        "p95_ms": 2589.1,
+        "max_ms": 2788.3,
+        "mean_ms": 2227.8
+      },
+      "load_context": {
+        "count": 32,
+        "p50_ms": 77.2,
+        "p95_ms": 108.1,
+        "max_ms": 169.7,
+        "mean_ms": 73.1
+      },
+      "memory_writer": {
+        "count": 47,
+        "p50_ms": 31.8,
+        "p95_ms": 85.8,
+        "max_ms": 3731.3,
+        "mean_ms": 165.5
+      },
+      "out_of_scope": {
+        "count": 2,
+        "p50_ms": 6.7,
+        "p95_ms": 7.5,
+        "max_ms": 7.6,
+        "mean_ms": 6.7
+      },
+      "output_guard": {
+        "count": 47,
+        "p50_ms": 7.3,
+        "p95_ms": 20.7,
+        "max_ms": 88.8,
+        "mean_ms": 10.9
+      },
+      "refuse": {
+        "count": 15,
+        "p50_ms": 3.3,
+        "p95_ms": 12.2,
+        "max_ms": 14.0,
+        "mean_ms": 4.2
+      },
+      "respond": {
+        "count": 8,
+        "p50_ms": 3319.9,
+        "p95_ms": 4732.2,
+        "max_ms": 4748.5,
+        "mean_ms": 3627.7
+      },
+      "supervisor": {
+        "count": 91,
+        "p50_ms": 26.4,
+        "p95_ms": 76.6,
+        "max_ms": 269.0,
+        "mean_ms": 35.6
+      }
+    },
+    "by_tool": {
+      "find_linked_claims": {
+        "count": 20,
+        "p50_ms": 8.5,
+        "p95_ms": 29.0,
+        "max_ms": 42.2,
+        "mean_ms": 11.2
+      },
+      "get_claim_history": {
+        "count": 20,
+        "p50_ms": 9.8,
+        "p95_ms": 30.9,
+        "max_ms": 34.2,
+        "mean_ms": 13.9
+      },
+      "score_red_flags": {
+        "count": 19,
+        "p50_ms": 7.0,
+        "p95_ms": 13.8,
+        "max_ms": 25.7,
+        "mean_ms": 8.1
+      },
+      "search_fraud_playbook": {
+        "count": 24,
+        "p50_ms": 66.1,
+        "p95_ms": 112.7,
+        "max_ms": 9810.1,
+        "mean_ms": 470.6
+      }
+    }
+  },
+  "traffic": {
+    "runs": 48,
+    "spans": 2352,
+    "llm_calls": 162,
+    "tool_calls": 83,
+    "agent_node_executions": 354,
+    "runs_by_tag": {
+      "eval": 22,
+      "demo": 14,
+      "redteam": 12
+    },
+    "llm_calls_per_run": {
+      "p50": 2.0,
+      "p95": 8.0
+    }
+  },
+  "errors": {
+    "error_spans": 0,
+    "error_span_rate": 0.0,
+    "llm_error_spans": 0,
+    "tool_error_spans": 0,
+    "runs_with_error_spans": 0,
+    "degraded_eval_runs": 0
+  },
+  "tokens": {
+    "prompt_tokens": 154173,
+    "completion_tokens": 57546,
+    "reasoning_tokens": 19487,
+    "total_tokens": 211719,
+    "per_run_total": {
+      "p50": 2867.5,
+      "p95": 10629.5
+    },
+    "by_agent": {
+      "ChatGoogleGenerativeAI": 211719
+    }
+  },
+  "cost": {
+    "total_usd": 0.190117,
+    "per_run_usd": {
+      "mean": 0.003961,
+      "p50": 0.00177,
+      "p95": 0.010086,
+      "max": 0.013424
+    },
+    "budget_per_run_usd": 0.05,
+    "runs_over_budget": 0
+  },
+  "quality": {
+    "accuracy": 1.0,
+    "hallucination_rate": 1.0,
+    "hallucination_score_mean": 1.0,
+    "faithfulness_mean": 0.9806,
+    "answer_relevancy_mean": 1.0,
+    "case_correctness_mean": 0.95,
+    "investigation_action_accuracy": 1.0,
+    "safety_pass_rate": 1.0
+  },
+  "slo": {
+    "run_p95_latency": {
+      "target_ms": 240000,
+      "actual_ms": 27087.1,
+      "met": true
+    },
+    "tool_p95_latency": {
+      "target_ms": 5000,
+      "actual_ms": 92.3,
+      "met": true
+    },
+    "error_span_rate": {
+      "target_max": 0.05,
+      "actual": 0.0,
+      "met": true
+    },
+    "cost_per_run_p95": {
+      "target_max_usd": 0.05,
+      "actual_usd": 0.010086,
+      "met": true
+    },
+    "accuracy": {
+      "target_min": 0.9,
+      "actual": 1.0,
+      "met": true
+    },
+    "hallucination_rate": {
+      "target_max": 0.1,
+      "actual": 1.0,
+      "met": false
+    }
+  }
+}

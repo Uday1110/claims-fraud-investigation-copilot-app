@@ -1,0 +1,685 @@
+{
+  "generated_by": "python -m scripts.find_failures",
+  "error_spans": [
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "45aa70153dbdb380",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "de4aa30baccfcefb",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "78bbf04666bab855",
+      "name": "history_agent:ClaimHistory",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "99e3dbbaa059abfa",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "de07ae394df8f91d",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "95e55982f71475a5",
+      "name": "history_agent:ClaimHistory",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "71494ab2353b2326",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "2c461562c56354e4",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "dba61f6682a886e4",
+      "name": "history_agent:ClaimHistory",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "4cbe7fdbfdc58a9e",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "68ce5fcd2d5d5965",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "7132d44f0076373d",
+      "name": "history_agent:ClaimHistory",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "1d0e6d204d29f16a",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "4d85c132350c6742",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "e69793ff496b9595",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "06602d18a049cb68",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "0c2f97eda3e85b9a",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "23ee871c83f05edf",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "7ba269c70ed5f925",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "2797f411cbd16ec8",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "1df8d255af72851d",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "e5df1d33679c71d9",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "5652a30180f41c92",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "ddb3dba3584f91a4",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "3106b446f21c0f15",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "629aa7399ef10ec1",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "97455854b59825da",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "69e13f4450cdef38",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "e5cff772d5beea2c",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "b9574519d856ca58",
+      "name": "history_agent.quarantine:QuarantinedFacts",
+      "span_kind": "AGENT",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "ed40d4433823214f",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "b3dd177e9b9f295b",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "2d16eda76852efac",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "65ccd0aad0acbb00",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "8723dd891f2451b7",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "e8022fae4a13ee36",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "29adf012b6cf2401",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "9bcb13643287313d",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "6ed431b3b8147f89",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "85650e592ce67311",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "003a83a8136ee200",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "b02ede3cd8806d82",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "d5ffe515d723005e",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "a15bd5723443f0c4",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "276914ff6c33ec2a",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "01c42e203649758a",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "9048bf90da7e7b35",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "b600f66b630997f1",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "fd77c6dbbeec2a6b",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "f954d17c4c93f14b",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "5b9126d11f5d45e6",
+      "trace_id": "864b1ab0ca3fcc99bdb922db5b74d5a3",
+      "span_id": "9a65a725d3f3a0cd",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "014a9eee3b02ade1",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "cf2ac66bcb4b1c8f",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "8d93832eba564f80",
+      "trace_id": "5db883e47973f2bb3bef19819d04a31d",
+      "span_id": "e84f71c4ead144a4",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "11c932d1b7376761",
+      "name": "ChatGoogleGenerativeAI",
+      "span_kind": "LLM",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "dc429e7a905038eb",
+      "name": "RunnableParallel<raw>",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    },
+    {
+      "run_id": "2e994f7170e04143",
+      "trace_id": "de97b042c55513294c57714387b664be",
+      "span_id": "b8fe5d7fbe22fddf",
+      "name": "intent_router:IntentDecision",
+      "span_kind": "CHAIN",
+      "status_message": "ChatGoogleGenerativeAIError(\"Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}\")Traceback (most re"
+    }
+  ],
+  "tool_failures": [],
+  "audit_events": [
+    {
+      "line": 305,
+      "timestamp": "2026-09-26T18:15:54.231+00:00",
+      "run_id": "5b9126d11f5d45e6",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "ChatGoogleGenerativeAIError: Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://a"
+      }
+    },
+    {
+      "line": 307,
+      "timestamp": "2026-09-26T18:15:54.240+00:00",
+      "run_id": "2e994f7170e04143",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "ChatGoogleGenerativeAIError: Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://a"
+      }
+    },
+    {
+      "line": 314,
+      "timestamp": "2026-09-26T18:15:54.853+00:00",
+      "run_id": "8d93832eba564f80",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "ChatGoogleGenerativeAIError: Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://a"
+      }
+    },
+    {
+      "line": 318,
+      "timestamp": "2026-09-26T18:16:21.123+00:00",
+      "run_id": "2e994f7170e04143",
+      "agent": "history_agent.quarantine",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "ChatGoogleGenerativeAIError: Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://a"
+      }
+    },
+    {
+      "line": 320,
+      "timestamp": "2026-09-26T18:16:21.818+00:00",
+      "run_id": "8d93832eba564f80",
+      "agent": "history_agent.quarantine",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "ChatGoogleGenerativeAIError: Error calling model 'gemini-3.5-flash' (RESOURCE_EXHAUSTED): 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://a"
+      }
+    },
+    {
+      "line": 339,
+      "timestamp": "2026-09-26T18:24:56.282+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 343,
+      "timestamp": "2026-09-26T18:24:56.544+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "history_agent.quarantine",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 345,
+      "timestamp": "2026-09-26T18:24:56.548+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "history_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 347,
+      "timestamp": "2026-09-26T18:24:56.655+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "indicator_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 348,
+      "timestamp": "2026-09-26T18:24:56.718+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "playbook_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 350,
+      "timestamp": "2026-09-26T18:24:56.797+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "playbook_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 351,
+      "timestamp": "2026-09-26T18:24:56.868+00:00",
+      "run_id": "e1ea1ecde1434d4f",
+      "agent": "case_writer",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 358,
+      "timestamp": "2026-09-26T18:24:57.228+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 361,
+      "timestamp": "2026-09-26T18:24:57.358+00:00",
+      "run_id": "cd37dc4fa4f34315",
+      "agent": "intent_router",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 366,
+      "timestamp": "2026-09-26T18:24:57.578+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "history_agent.quarantine",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 368,
+      "timestamp": "2026-09-26T18:24:57.582+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "history_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 372,
+      "timestamp": "2026-09-26T18:24:57.761+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "indicator_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 373,
+      "timestamp": "2026-09-26T18:24:57.846+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "playbook_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 375,
+      "timestamp": "2026-09-26T18:24:57.942+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "playbook_agent",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    },
+    {
+      "line": 376,
+      "timestamp": "2026-09-26T18:24:58.027+00:00",
+      "run_id": "edc27882d6924ade",
+      "agent": "case_writer",
+      "action": "degraded_mode",
+      "decision": "deterministic_fallback",
+      "details": {
+        "reason": "offline"
+      }
+    }
+  ],
+  "eval_failures": []
+}

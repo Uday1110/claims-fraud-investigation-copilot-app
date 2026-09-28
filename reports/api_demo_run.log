@@ -1,0 +1,6 @@
+# FastAPI streaming demo (tests/test_api.py, offline mode)
+POST /investigate CLM-1003 -> events=['start', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'node', 'final']
+  nodes streamed: ['input_guard', 'load_context', 'intent_router', 'supervisor', 'history_agent', 'supervisor', 'indicator_agent', 'supervisor', 'playbook_agent', 'supervisor', 'case_writer', 'output_guard', 'memory_writer', 'request_signoff']
+  final: intent=investigate_claim action=refer_to_siu pending_signoff=True
+POST /review api-t1 approve SIU-LEAD-01 -> {'status': 'approved', 'reviewer': 'SIU-LEAD-01', 'decision_note': '', 'requested_action': 'refer_to_siu'}
+POST /investigate as INV-12 -> refused: I can't access that claim: it is not assigned to your queue. Access requests for

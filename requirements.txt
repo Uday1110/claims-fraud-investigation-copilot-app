@@ -1,0 +1,56 @@
+# Claims Fraud-Investigation Copilot - pip-only, no Docker / external DB.  Python 3.11+ (built on 3.12).
+# Model provider: Google Gemini ONLY (langchain-google-genai / google-genai).
+# Versions are the exact ones the committed evidence was generated with.
+
+# --- agent framework + model ---
+langgraph==1.2.12
+langchain-core==1.6.5
+langchain-google-genai==4.4.0
+google-genai==2.25.0
+pydantic==2.13.5
+
+# --- interoperability (MCP) ---
+mcp==1.30.0
+langchain-mcp-adapters==0.3.2
+
+# --- memory ---
+langgraph-checkpoint-sqlite==3.1.1
+aiosqlite==0.22.1
+langmem==0.0.30
+
+# --- retrieval (FAISS + local embeddings) ---
+faiss-cpu==1.15.1
+sentence-transformers==6.1.0
+numpy==2.4.6
+
+# --- observability (mandated: Arize Phoenix + OpenTelemetry / openinference) ---
+arize-phoenix==20.6.0
+arize-phoenix-client==3.5.0
+openinference-instrumentation==0.1.66
+openinference-instrumentation-langchain==0.1.76
+openinference-semantic-conventions==0.1.39
+opentelemetry-sdk==1.45.0
+opentelemetry-exporter-otlp-proto-http==1.45.0
+
+# --- evaluation + tests ---
+deepeval==4.2.6
+click==8.3.3            # deepeval requires <8.4
+pytest==9.1.1
+pytest-asyncio==1.4.0
+
+# --- security ---
+presidio-analyzer==2.2.364
+presidio-anonymizer==2.2.364
+spacy==3.8.16           # + model: python -m spacy download en_core_web_sm
+python-dotenv==1.2.3
+
+# --- reports / dashboard ---
+pandas==3.0.6
+pyarrow==25.0.1
+matplotlib==3.11.2
+httpx==0.28.1
+playwright==1.63.0      # optional: Phoenix UI screenshot (python -m playwright install chromium)
+
+# --- interface (CLI is stdlib argparse; API is the optional bonus) ---
+fastapi==0.141.1
+uvicorn==0.54.0

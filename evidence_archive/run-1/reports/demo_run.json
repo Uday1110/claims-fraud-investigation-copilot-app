@@ -1,0 +1,142 @@
+[
+  {
+    "step": 1,
+    "run_id": "4d80710094434829",
+    "thread_id": "demo-session-1",
+    "intent": "investigate_claim",
+    "pending_signoff": true,
+    "degraded": false,
+    "risk_tier": "high",
+    "cost_usd": 0.011977
+  },
+  {
+    "step": 2,
+    "run_id": "4b8222a3959c4b02",
+    "thread_id": "demo-session-1",
+    "intent": "investigate_claim",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "high",
+    "cost_usd": 0.0
+  },
+  {
+    "step": 3,
+    "run_id": "65825028ac9048fb",
+    "thread_id": "demo-session-1",
+    "intent": "followup",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "medium",
+    "cost_usd": 0.00177
+  },
+  {
+    "step": 4,
+    "run_id": "05929a1d891545b7",
+    "thread_id": "demo-session-2",
+    "intent": "followup",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "medium",
+    "cost_usd": 0.00177
+  },
+  {
+    "step": 5,
+    "run_id": "0552b4553d4340b8",
+    "thread_id": "demo-session-3",
+    "intent": "investigate_claim",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "medium",
+    "cost_usd": 0.009443
+  },
+  {
+    "step": 6,
+    "run_id": "12cc2785ba6344ee",
+    "thread_id": "demo-session-4",
+    "intent": "investigate_claim",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.008482
+  },
+  {
+    "step": 7,
+    "run_id": "394851d670774e11",
+    "thread_id": "demo-session-5",
+    "intent": "indicator_check",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "medium",
+    "cost_usd": 0.006594
+  },
+  {
+    "step": 8,
+    "run_id": "a4c0377efe554b4c",
+    "thread_id": "demo-session-6",
+    "intent": "out_of_scope",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.0
+  },
+  {
+    "step": 9,
+    "run_id": "2c5b4a69f9b540c7",
+    "thread_id": "demo-session-7",
+    "intent": "out_of_scope",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.0
+  },
+  {
+    "step": 10,
+    "run_id": "c451bbf4c7884b6d",
+    "thread_id": "demo-session-8",
+    "intent": "out_of_scope",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.0
+  },
+  {
+    "step": 11,
+    "run_id": "23be6eaf51024d7a",
+    "thread_id": "demo-session-9",
+    "intent": "action_request",
+    "pending_signoff": true,
+    "degraded": false,
+    "risk_tier": "high",
+    "cost_usd": 0.000648
+  },
+  {
+    "step": 12,
+    "run_id": "80edfb01b4fb4d7a",
+    "thread_id": "demo-session-10",
+    "intent": "playbook_lookup",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.004404
+  },
+  {
+    "step": 13,
+    "run_id": "93c81bf8f0fd4096",
+    "thread_id": "demo-session-11",
+    "intent": "ambiguous",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.000952
+  },
+  {
+    "step": 14,
+    "run_id": "14b7eba42c4641d3",
+    "thread_id": "demo-session-12",
+    "intent": "out_of_scope",
+    "pending_signoff": false,
+    "degraded": false,
+    "risk_tier": "low",
+    "cost_usd": 0.000632
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "generated_by": "python -m scripts.find_failures",
+  "error_spans": [],
+  "tool_failures": [],
+  "audit_events": [],
+  "eval_failures": [
+    {
+      "id": "G15",
+      "run_id": "9126b9dee4dc41e6",
+      "failed_checks": [],
+      "judge_failed": [
+        "case_correctness"
+      ]
+    }
+  ]
+}

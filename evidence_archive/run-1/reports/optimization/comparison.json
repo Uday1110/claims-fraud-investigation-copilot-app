@@ -1,0 +1,60 @@
+{
+  "generated_by": "python -m scripts.optimization_benchmark (via scripts/regenerate_evidence.py)",
+  "benchmark_claims": [
+    "CLM-1001",
+    "CLM-1005",
+    "CLM-1008"
+  ],
+  "phases": {
+    "bench-baseline": {
+      "GEMINI_THINKING_LEVEL": "high",
+      "CONTEXT_COMPRESSION": "false",
+      "MAX_RETRIEVAL_ROUNDS": "3"
+    },
+    "bench-optimized": {
+      "GEMINI_THINKING_LEVEL": "low",
+      "CONTEXT_COMPRESSION": "true",
+      "MAX_RETRIEVAL_ROUNDS": "2"
+    }
+  },
+  "run_latency_p50_ms": {
+    "baseline": 47792.7,
+    "optimized": 23635.0,
+    "change_pct": -50.5
+  },
+  "run_latency_p95_ms": {
+    "baseline": 50408.4,
+    "optimized": 24736.6,
+    "change_pct": -50.9
+  },
+  "thinking_p50_ms": {
+    "baseline": 5065.5,
+    "optimized": 2715.9,
+    "change_pct": -46.4
+  },
+  "prompt_tokens": {
+    "baseline": 20252,
+    "optimized": 19672,
+    "change_pct": -2.9
+  },
+  "completion_tokens": {
+    "baseline": 27834,
+    "optimized": 8525,
+    "change_pct": -69.4
+  },
+  "reasoning_tokens": {
+    "baseline": 22225,
+    "optimized": 2448,
+    "change_pct": -89.0
+  },
+  "cost_total_usd": {
+    "baseline": 0.075661,
+    "optimized": 0.027214,
+    "change_pct": -64.0
+  },
+  "llm_calls": {
+    "baseline": 21,
+    "optimized": 21,
+    "change_pct": 0.0
+  }
+}
